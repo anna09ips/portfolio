@@ -85,6 +85,19 @@
   .proj .body p:first-child{margin-top:0}
   .proj .role-line{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:13px}
   .proj .role-line b{color:var(--gold);font-weight:800}
+  /* GALLERY */
+  .gal{margin-top:42px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  @media(max-width:680px){.gal{grid-template-columns:1fr}}
+  .gcard{display:block;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:.2s}
+  .gcard:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 16px 34px -20px rgba(255,59,59,.4)}
+  .gthumb{height:230px;overflow:hidden;background:var(--bg2);border-bottom:1px solid var(--line)}
+  .gthumb img{width:100%;display:block}
+  .ginfo{padding:20px 22px}
+  .gtitle{font-size:17px;font-weight:800;letter-spacing:-.02em}
+  .gdesc{margin-top:6px;font-size:14px;color:var(--ink2)}
+  .grole{margin-top:12px;font-size:11.5px;font-weight:700;color:var(--accent-ink);background:var(--accent-soft);display:inline-block;padding:4px 11px;border-radius:999px}
+  .gview{margin-top:10px;font-size:12.5px;color:var(--muted);font-weight:700}
+  .gcard:hover .gview{color:var(--accent)}
   /* MAPPING */
   .map-sec{background:var(--bg2)}
   .map{margin-top:38px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
@@ -174,6 +187,7 @@
       <a href="#ai">AI 역량</a>
       <a href="#career">경력</a>
       <a href="#proj">대표 프로젝트</a>
+      <a href="#work">작업물</a>
       <a href="#fit">직무 적합성</a>
     </div>
   </div>
@@ -455,87 +469,57 @@
   </div>
 </section>
 
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">Selected Work · PR</div>
+    <h2 class="h2">대표 작업물 — PR · 랜딩 페이지</h2>
+    <p class="lead">쏠북(SOLVOOK)에서 직접 런칭·확장한 사업들의 PR·랜딩 페이지입니다. <b>PR 기획자로서 기획·구성 → 카피·문구 → 디자인 협업 → 성과 분석</b>까지 전 과정을 담당했습니다. (클릭하면 전체 페이지가 열립니다)</p>
+    <div class="gal">
+
+      <a class="gcard" href="full_pod.jpg" target="_blank" rel="noopener">
+        <div class="gthumb"><img src="thumb_pod.jpg" alt="쏠북 제본 서비스 오픈 랜딩페이지"></div>
+        <div class="ginfo">
+          <div class="gtitle">쏠북 제본 서비스 오픈</div>
+          <div class="gdesc">제본(POD) 서비스 런칭 랜딩 — ‘한 권도 무료배송·최저가’ 소구부터 가격 안내·FAQ까지 전환 구조 설계.</div>
+          <div class="grole">기획·구성 · 카피 · 디자인 협업 · 성과 분석</div>
+          <div class="gview">전체 보기 →</div>
+        </div>
+      </a>
+
+      <a class="gcard" href="full_hwang.jpg" target="_blank" rel="noopener">
+        <div class="gthumb"><img src="thumb_hwang.jpg" alt="황소수학 설명회 랜딩페이지"></div>
+        <div class="ginfo">
+          <div class="gtitle">황소수학 설명회</div>
+          <div class="gdesc">수학 콘텐츠 런칭 설명회 랜딩 — ‘황소수학이 정답은 아니다’ 메시지로 차별화 소구와 신뢰 요소 구성.</div>
+          <div class="grole">기획·구성 · 카피 · 디자인 협업 · 성과 분석</div>
+          <div class="gview">전체 보기 →</div>
+        </div>
+      </a>
+
+      <a class="gcard" href="full_inf.jpg" target="_blank" rel="noopener">
+        <div class="gthumb"><img src="thumb_inf.jpg" alt="인피니트연구소 수학 기말 풀패키지 PR"></div>
+        <div class="ginfo">
+          <div class="gtitle">인피니트연구소 — 수학 기말 풀패키지</div>
+          <div class="gdesc">시즌 한정 수학 풀패키지 PR — 타깃의 페인포인트 → 해결 제안 흐름으로 패키지 구성과 혜택을 설계.</div>
+          <div class="grole">기획·구성 · 카피 · 디자인 협업 · 성과 분석</div>
+          <div class="gview">전체 보기 →</div>
+        </div>
+      </a>
+
+      <a class="gcard" href="full_all.jpg" target="_blank" rel="noopener">
+        <div class="gthumb"><img src="thumb_all.jpg" alt="전과목 출시·확장 PR"></div>
+        <div class="ginfo">
+          <div class="gtitle">전과목 출시·확장 PR</div>
+          <div class="gdesc">전과목(수·사·과) 출시·확장 캠페인 — ‘광고 안 해도 1등급은 이미 아는 쏠북’ 후킹으로 신뢰·성장 지표 강조.</div>
+          <div class="grole">기획·구성 · 카피 · 디자인 협업 · 성과 분석</div>
+          <div class="gview">전체 보기 →</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 <section id="fit" class="map-sec">
   <div class="wrap">
-    <div class="eyebrow">Why this role</div>
-    <h2 class="h2">전략 크리에이터 매니저 직무 ↔ 나의 경험</h2>
-    <p class="lead">채용공고의 주요 업무를 제 경험의 언어로 1:1 매핑했습니다. 라이브커머스 자체 경력은 아니지만, 그 일을 잘하기 위한 근육은 이미 갖춰져 있습니다.</p>
-    <div class="map">
-      <div class="row hd">
-        <div class="c">채용공고 — 주요 업무</div>
-        <div class="arrow"></div>
-        <div class="c">나의 경험 (직무 언어 번역)</div>
-      </div>
-      <div class="row">
-        <div class="c jd">크리에이터 발굴 및 온보딩 지원</div>
-        <div class="arrow">→</div>
-        <div class="c me">신규 거래처 발굴·영업, 셀러/파트너 커뮤니케이션, 신규 채널 제안 경험</div>
-      </div>
-      <div class="row">
-        <div class="c jd">크리에이터 × 상품 큐레이션 · 방송 준비</div>
-        <div class="arrow">→</div>
-        <div class="c me">신규 상품 기획, 채널별 편성 전략, 온·오프 서비스 기획 경험</div>
-      </div>
-      <div class="row">
-        <div class="c jd">라이브 방송 운영 지원 · 실시간 대응</div>
-        <div class="arrow">→</div>
-        <div class="c me">생산–배송 운영 프로세스 설계, 빠른 실행 환경에서의 문제해결</div>
-      </div>
-      <div class="row">
-        <div class="c jd">방송 성과 분석 및 개선 (리포트)</div>
-        <div class="arrow">→</div>
-        <div class="c me">매출·손익 분석, KPI 관리, 데이터 기반 결과 정리·리포팅</div>
-      </div>
-      <div class="row">
-        <div class="c jd">크리에이터 성장 프로그램 운영</div>
-        <div class="arrow">→</div>
-        <div class="c me">신규 서비스 기획·운영, 직무교육 콘텐츠 기획, 운영 안정화 경험</div>
-      </div>
-      <div class="row">
-        <div class="c jd">MD·PD·마케팅·CS 등 유관부서 협업</div>
-        <div class="arrow">→</div>
-        <div class="c me">생산·물류·투자사·연구소 전방위 협업 및 정책·프로세스 조율</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="close" style="border-bottom:none">
-  <div class="wrap">
-    <div class="eyebrow">Let's talk</div>
-    <h2 class="h2">크리에이터의 0→1을<br>가장 가까이서 만들고 싶습니다.</h2>
-    <p class="quote">“공격적 점유율 확대에서 선택과 집중으로.” 그립컴퍼니가 지금 필요로 하는 건 크리에이터를 체계적으로 키우고 매출로 연결하는 실행가라고 생각합니다. 제가 10년간 해온 일입니다.</p>
-    <div class="contact">
-      <a class="primary" href="mailto:hji5816@gmail.com">hji5816@gmail.com</a>
-      <a href="#career">경력 자세히 보기</a>
-    </div>
-  </div>
-</section>
-
-<footer>© 2026 안효진 · 전략 크리에이터 매니저 지원 포트폴리오</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-<script>
-(function(){
-  var el=document.getElementById('revChart'); if(!el||!window.Chart) return;
-  var labels=['25.5','25.6','25.7','25.8','25.9','25.10','25.11','25.12','26.1','26.2','26.3','26.4','26.5','26.6'];
-  var data=[2,245,147,200,212,171,282,113,151,185,1031,1017,818,982];
-  var colors=data.map(function(v){return v>=800?'#ff3b3b':'rgba(255,107,107,.45)';});
-  new Chart(el.getContext('2d'),{
-    type:'bar',
-    data:{labels:labels,datasets:[{data:data,backgroundColor:colors,borderRadius:5,maxBarThickness:34}]},
-    options:{
-      responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},
-        tooltip:{callbacks:{label:function(c){return c.parsed.y+'만 원';}}}},
-      scales:{
-        x:{grid:{display:false},ticks:{color:'#9a9da6',font:{size:11}}},
-        y:{grid:{color:'#2b2d34'},ticks:{color:'#9a9da6',font:{size:11},callback:function(v){return v>=1000?(v/1000)+'천만':v+'';}},beginAtZero:true}
-      }
-    }
-  });
-})();
-</script>
-
-</body>
-</html>
+    <div class="eyebrow">Wh
