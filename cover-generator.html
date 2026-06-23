@@ -210,4 +210,54 @@
     <div class="plist">
       <div class="pitem"><div class="t">Figma API 연동 시도 → 더 정확한 방식으로 전환</div><div class="d">초기엔 Figma REST API로 원본에서 좌표·폰트·색상을 자동 추출했지만, 실제로는 디자이너가 내보낸 <b>샘플 PDF의 텍스트 좌표가 최종 인쇄 기준</b>이라는 점이 더 정확했습니다. 기준을 샘플 PDF로 통일하고 Figma 경로는 정리. → “두 시스템을 다 연동해 보고, 정확도를 기준으로 더 나은 쪽을 선택”한 사례.</div></div>
       <div class="pitem"><div class="t">좌표 기준 불일치 해결</div><div class="d">엔진은 글자의 윗변(em-top)을, 웹은 밑줄(baseline)을 기준으로 좌표를 해석해 둘이 어긋남 → <b>baseline 기준으로 통일</b>해 근본 원인 제거.</div></div>
-      <div class="pitem"><
+      <div class="pitem"><div class="t">템플릿 비율 문제 발견</div><div class="d">일부 배경이 A4 비율이 아니어서 글자가 ~25pt 밀려 선에 붙는 현상 → <b>전 템플릿을 A4 비율 배경으로 교체.</b></div></div>
+      <div class="pitem"><div class="t">6종 전면 최신화</div><div class="d">모든 템플릿의 배경·좌표·폰트·색상을 최신 디자이너 샘플 기준으로 교체하고, <b>픽셀 단위 겹침 비교로 검증.</b></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="eyebrow">Result</div>
+    <h2 class="h2">결과는?</h2>
+    <table class="tbl">
+      <tr><th>항목</th><th>Before</th><th>After</th><th>효과</th></tr>
+      <tr><td class="area">표지 1장 제작</td><td>약 5~10분 (수작업)</td><td>약 2~5초 (자동화)</td><td><b>약 100~300배 단축</b></td></tr>
+      <tr><td class="area">일일 처리량</td><td>디자이너 가용시간에 비례</td><td>클릭 한 번 일괄 처리</td><td><b>사실상 무제한</b></td></tr>
+      <tr><td class="area">디자이너 투입</td><td>표지 작업 100%</td><td>템플릿 디자인만</td><td><b>표지 텍스트 작업 의존도 0%</b></td></tr>
+      <tr><td class="area">품질 편차</td><td>작업자마다 다름</td><td>동일 알고리즘·좌표</td><td><b>100% 일관성</b></td></tr>
+      <tr><td class="area">운영 가능 인원</td><td>디자이너만</td><td>누구나 (.bat·웹 링크)</td><td><b>운영 부담 분산</b></td></tr>
+    </table>
+    <p class="note">* 정량 수치 일부는 추정치로, 실측 후 업데이트 예정입니다.</p>
+    <div class="grid2" style="margin-top:20px">
+      <div class="ibox"><div class="t">디자이너는 본업에 집중</div><div class="d">반복 노동에서 해방되어 새 템플릿 디자인 등 창의적 업무에 시간 투입.</div></div>
+      <div class="ibox"><div class="t">확장성 확보</div><div class="d">새 디자인은 샘플 PDF로 배경·좌표만 교체하면 추가 가능.</div></div>
+      <div class="ibox"><div class="t">품질 일관성</div><div class="d">“어제와 오늘 표지가 미묘하게 다르다”는 문제 해소.</div></div>
+      <div class="ibox"><div class="t">운영 자유도</div><div class="d">디자이너 부재 시에도 기획자·CS 누구나 운영 가능.</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="eyebrow">Takeaway</div>
+    <h2 class="h2">이 프로젝트가 보여주는 것</h2>
+    <ul class="shows">
+      <li><b>AI를 활용한 비개발자의 실무 자동화 구축 역량</b></li>
+      <li><b>Google Sheets · Figma · Python</b> 등 이종 시스템 연동 설계, 그리고 <b>정확도 기준의 기술 선택</b></li>
+      <li>디자인–개발 협업 파이프라인 <b>자동화 기획 능력</b></li>
+      <li>운영자(현장 사용자) 친화적 <b>UX 설계</b> (.bat 더블클릭 / 웹 링크로 단순화)</li>
+      <li>단계적 검증과 개선 — <b>PoC → 좌표 추출 → 기준 통일 → 픽셀 검증 → 실운영</b></li>
+    </ul>
+    <div class="chips">
+      <span>AI 협업(Claude)</span><span>Python</span><span>PyMuPDF</span><span>Pillow</span><span>jsPDF</span><span>Google Sheets API</span><span>GitHub Pages</span><span>자동화 기획</span><span>비개발자 도구화</span>
+    </div>
+  </div>
+
+  <div class="navnext">
+    <a href="index.html">← 포트폴리오 메인</a>
+    <a class="primary" href="index.html#ai">AI 활용 역량 더 보기 →</a>
+  </div>
+
+</div>
+
+<footer>© 2026 안효진 · 표지 자동생성기 케이스 스터디</footer>
+
+</body>
+</html>
