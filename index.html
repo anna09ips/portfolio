@@ -46,6 +46,12 @@
   .metric .mbul li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:50%;background:var(--accent)}
   .metric .mbul b{color:var(--accent);font-weight:800}
   .metric .mbul .rv{display:block;margin-top:1px;color:var(--muted);font-weight:600;font-size:12px}
+  .principles{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:680px){.principles{grid-template-columns:1fr}}
+  .principle{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:#fff}
+  .principle .pt{font-size:14px;font-weight:800;color:var(--ink)}
+  .principle .pd{margin-top:5px;font-size:12.5px;color:var(--ink2);line-height:1.5}
+  .principle .pd b{color:var(--accent);font-weight:700}
   /* SECTION */
   section{padding:78px 0;border-bottom:1px solid var(--line);}
   .eyebrow{font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;}
@@ -231,6 +237,11 @@
           <li>전력중개 <b>3.8배</b><span class="rv">반기 1.7억 → 6.5억 원</span></li>
         </ul>
       </div>
+    </div>
+    <div class="principles">
+      <div class="principle"><div class="pt">자기주도 · 문제해결</div><div class="pd">필요를 발견하면 스스로 구조로 푼다 — 비개발자로서 AI로 운영 자동화를 직접 구축하고, 반복 병목을 분해해 <b>베이커리 20배·제본 약 5배</b> 성장으로 연결.</div></div>
+      <div class="principle"><div class="pt">책임감 · 오너십</div><div class="pd">끝까지 책임진다 — 신사업을 0→1 발굴부터 매출·손익·운영 안정화까지 오너로 완결, <b>SOP 문서화로 무중단 인수인계</b>.</div></div>
+      <div class="principle"><div class="pt">커뮤니케이션 얼라인</div><div class="pd">숫자로 정렬한다 — MD·생산·물류·투자사 등 유관부서와 전사 레벨로 설득·협업, <b>성장 가설을 숫자로 합의</b>하고 추진.</div></div>
     </div>
   </div>
 </header>
