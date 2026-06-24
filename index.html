@@ -97,8 +97,12 @@
   .proj .role-line{margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:13px}
   .proj .role-line b{color:var(--gold);font-weight:800}
   /* GALLERY */
-  .gal{margin-top:32px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-  @media(max-width:900px){.gal{grid-template-columns:repeat(2,1fr)}}
+  .gal{margin-top:32px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media(min-width:901px){
+    .gal{grid-template-columns:repeat(6,1fr)}
+    .gal .gcard:nth-child(1),.gal .gcard:nth-child(2){grid-column:span 3}
+    .gal .gcard:nth-child(3),.gal .gcard:nth-child(4),.gal .gcard:nth-child(5){grid-column:span 2}
+  }
   @media(max-width:600px){.gal{grid-template-columns:1fr}}
   .gcard{display:block;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;transition:.2s}
   .gcard:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 16px 34px -20px rgba(255,59,59,.4)}
@@ -527,7 +531,7 @@
     <h2 class="h2">최근 작업물</h2>
     <p class="lead">직접 기획·실행한 PR·랜딩 페이지와 실무 문서입니다. (클릭하면 전체 페이지·원문이 열립니다)</p>
     <h3 class="worksub" style="margin-top:38px">PR · 랜딩 페이지</h3>
-    <p class="lead" style="margin-top:8px">쏠북(SOLVOOK)에서 직접 런칭·확장한 사업들의 PR·랜딩 페이지. <b>PR 기획자로서 기획·구성 → 카피 → 디자인 협업 → 성과 분석</b>까지 담당.</p>
+    <p class="lead" style="margin-top:8px">직접 런칭·확장한 사업들의 PR·랜딩 페이지 <b>(기획 · 디자인&amp;퍼블 커뮤 · 성과분석)</b></p>
     <div class="gal">
 
       <a class="gcard" href="full_pod.jpg" target="_blank" rel="noopener">
