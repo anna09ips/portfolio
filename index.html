@@ -165,8 +165,9 @@
   .ai-feature .fd{font-size:13.5px;color:#b8bac2;margin-top:3px}
   .ai-feature .fgo{flex-shrink:0;font-size:14px;font-weight:800;color:#fff;background:#ff3b3b;padding:11px 18px;border-radius:999px;white-space:nowrap}
   @media(max-width:640px){.ai-feature{flex-wrap:wrap}.ai-feature .fgo{width:100%;text-align:center}}
-  .ai-projs{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-  @media(max-width:820px){.ai-projs{grid-template-columns:1fr}}
+  .ai-projs{margin-top:16px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  @media(max-width:980px){.ai-projs{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:600px){.ai-projs{grid-template-columns:1fr}}
   .ai-card{border:1px solid #2b2d34;border-radius:18px;padding:24px;background:#1b1d22;display:flex;flex-direction:column}
   .ai-card .tt{font-size:17px;font-weight:800;letter-spacing:-.02em;color:#fff}
   .ai-card .st{margin-top:2px;font-size:12.5px;color:#ff6b6b;font-weight:700}
@@ -337,6 +338,12 @@
 
     <div class="ai-projs">
       <div class="ai-card">
+        <div class="tt">열람출력 파일 생성기</div>
+        <div class="st">PDF 조회·병합·보안 처리 웹앱</div>
+        <div class="ph"><b>Before</b> 열람출력 제본은 PDF 조회·병합 결정·워터마크·암호화 등 단계가 많고 사람 검토가 필요.<br><br><b>After</b> product id로 PDF 조회 → 병합 → 워터마크/암호화 → 다운로드를 <b>Streamlit 웹앱</b>으로 도구화. 중요 결정은 사람이 통제(human-in-the-loop), 동료도 쓰도록 사내 배포.</div>
+        <div class="stack"><span>Streamlit</span><span>Python</span><span>PDF 가공</span><span>사내 배포</span></div>
+      </div>
+      <div class="ai-card">
         <div class="tt">POD 제본 운영 자동화</div>
         <div class="st">end-to-end 자동화 시스템</div>
         <div class="ph"><b>Before</b> 매일 주문 DB를 수기 조회·시트 이관, 제본 PDF를 일일이 다운로드 → 시간 소모·휴먼 에러.<br><br><b>After</b> 전 과정을 분해해 <b>.bat 더블클릭 실행</b>으로 도구화. 비개발자도 코드 없이 안정적으로 운영. 표지 자동 생성·사양 검수 규칙까지 파이프라인에 통합.</div>
@@ -353,12 +360,6 @@
         <div class="st">단순 보고 → 의사결정</div>
         <div class="ph"><b>Before</b> 자동 수집 데이터가 보고용에 머묾.<br><br><b>After</b> 성수기 시즌 패턴, B2B/B2C 채널 트렌드, 핵심 고객(학원) 데이터를 <b>세그멘테이션·매핑</b>해 인사이트로 자산화. 시즌·채널·거래처 단위 매출 패턴 파악 기반 마련.</div>
         <div class="stack"><span>데이터 분석</span><span>채널·고객 세그</span><span>인사이트 도출</span></div>
-      </div>
-      <div class="ai-card">
-        <div class="tt">열람출력 파일 생성기</div>
-        <div class="st">PDF 조회·병합·보안 처리 웹앱</div>
-        <div class="ph"><b>Before</b> 열람출력 제본은 PDF 조회·병합 결정·워터마크·암호화 등 단계가 많고 사람 검토가 필요.<br><br><b>After</b> product id로 PDF 조회 → 병합 → 워터마크/암호화 → 다운로드를 <b>Streamlit 웹앱</b>으로 도구화. 중요 결정은 사람이 통제(human-in-the-loop), 동료도 쓰도록 사내 배포.</div>
-        <div class="stack"><span>Streamlit</span><span>Python</span><span>PDF 가공</span><span>사내 배포</span></div>
       </div>
     </div>
 
