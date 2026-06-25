@@ -380,7 +380,7 @@
       <div class="chartbox"><canvas id="revChart"></canvas></div>
       <div class="rmetrics">
         <div class="rm"><div class="n">약 5배</div><div class="l">초기 월 ~200만 원대 → 최근 월 ~1,000만 원대 성장</div></div>
-        <div class="rm"><div class="n">6,562권</div><div class="l">14개월 누적 처리 (누적 1,601건 · 매출 약 5,556만 원)</div></div>
+        <div class="rm"><div class="n">6,562권</div><div class="l">14개월 누적 처리 (누적 1,601건 · 매출 약 5,560만 원)</div></div>
         <div class="rm"><div class="n">1.5→5.9</div><div class="l">권/건 비율 상승 — B2B 대량 주문 중심으로 체질 전환</div></div>
       </div>
     </div>
@@ -683,7 +683,7 @@
 (function(){
   var el=document.getElementById('revChart'); if(!el||!window.Chart) return;
   var labels=['25.5','25.6','25.7','25.8','25.9','25.10','25.11','25.12','26.1','26.2','26.3','26.4','26.5','26.6'];
-  var data=[2,245,147,200,212,171,282,113,151,185,1031,1017,818,982];
+  var data=[10,250,150,200,220,180,290,120,160,190,1040,1020,820,990];
   var colors=data.map(function(v){return v>=800?'#ff3b3b':'rgba(255,107,107,.45)';});
   new Chart(el.getContext('2d'),{
     type:'bar',
